@@ -56,11 +56,11 @@ while True:
                 f.write(fingers_string)
             print(fingers)
 
-       
-        windows_file_path = "/Users/akshaym/Downloads/Hand-Detection-and-Finger-Counting-master/fingers.txt"
-        password = "815087Am"
-        raspberry_pi_file_path = "/home/pi/Downloads/FinalM/"
-        result = subprocess.run(["scp", windows_file_path, "pi@10.7.194.21:"+raspberry_pi_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, input=password.encode())
+        #replace the following variables with they're respective paths, password and IP address
+        windows_file_path = "File path of the fingers.txt on your desktop/laptop"
+        password = "the password for the ssh file to be sent with automation"
+        raspberry_pi_file_path = "File path to store the list of fingers that are held up"
+        result = subprocess.run(["scp", windows_file_path, "IP_Address:"+raspberry_pi_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, input=password.encode())
         
 
  # Show the frame
