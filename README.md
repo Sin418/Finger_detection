@@ -36,7 +36,6 @@ Before running this project, ensure you have the following installed:
    ```bash
    python finger_detection.py
 
-
 This script captures the webcam feed, detects fingers, and sends the finger data to a Raspberry Pi.
 
 Press 'q' to exit the application when done.
